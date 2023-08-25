@@ -51,20 +51,26 @@ main img{
     flex-direction: column;
 }
 .titulo h1{
+    color: #fff;
+    background: #000;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
     text-decoration: underline;
     border-radius: 6px;
-    text-shadow: 2px 2px 2px rgb(82, 81, 81);
+    text-shadow: 2px 2px 2px rgb(192, 191, 191);
+    margin: 1rem 5%;
+    padding-bottom: 5px;
 }
 .titulo p{
+    padding: 5px;
+    color: #fff;
     text-align: center;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin: 0 5px 30px 5px;
+    background: #000000c0;
+    border-radius: 10px;
 }
 .video{
     display: flex;
@@ -128,10 +134,14 @@ main img{
     justify-content: center;
 }
 .spotify-multimedia h2{
+    color: #fff;
+    background: #000;
     text-decoration: underline;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    margin: 5px 10%;
+    border-radius: 10px;
 }
 
 .spotify-tres, .spotify-dos{
@@ -166,9 +176,16 @@ main img{
     .titulo h1{
         font-size: 35px;
         font-weight: 800;
+        text-shadow: 2px 2px 2px rgb(76, 75, 75);
+        background: none;
+        color: #000;
     }
     .titulo p{
         font-size: 20px;
+        background: #000;
+        margin: 0 25% 20px 25%;
+        color: #ffffff;
+        border-radius: 10px;
     }
     .video iframe{
         height: 350px;
@@ -190,6 +207,8 @@ main img{
         font-size: 30px;
         padding-bottom: 10px;
         font-weight: 600;
+        background: none;
+        color: #000;
     }
     .footer-inicio img{
         height: 250px;
@@ -202,34 +221,56 @@ main img{
 
 /* inicia pag Historia */
 .principal{
+    padding: 3px 6px;
     margin: 50px 30px;
     font-weight: bold;
+    background: #000000c0;
 }
 .principal h2{
     text-align: center;
     font-size: 30px;
     text-decoration: underline;
     margin: 20px 0;
+    font-size: 600;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgb(192, 191, 191);
 }
 .principal h3{
     font-size: 20;
     text-decoration: underline;
     margin: 10px 0;
+    color: #fff;
+    font-weight: 500;
 }
 .principal p{
     font-size: 15px;
     margin-bottom: 10px;
+    color: #fff;
 }
+
+/* mq Pag Historia DESKTOP */
+@media screen and (min-width:1024px){
+    .principal{
+        background:#000000c0;
+        color: #fff;
+    }
+}
+
+
+
 /* inicia pag Integrantes */
-.tituloIntegrantes{
+.titulo-integrantes h1{
+    color: #fff;
+    background: #000;
     text-align: center;
     font-size: 30px;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-weight: bold;
     text-decoration: underline;
     border-radius: 6px;
-    text-shadow: 2px 2px 2px rgb(82, 81, 81);
+    text-shadow: 2px 2px 2px rgb(192, 191, 191);
+    margin: 1rem 15%;
+    padding: 5px 0;
 }
 .kjarkas-grupo{
     display: grid;
@@ -253,6 +294,13 @@ main img{
 
 /* mq Pag Integrantes DESKTOP */
 @media screen and (min-width:1024px){
+    .titulo-integrantes h1{
+        font-size: 35px;
+        font-weight: 800;
+        text-shadow: 2px 2px 2px rgb(76, 75, 75);
+        background: none;
+        color: #000;
+    }
     .kjarkas-uno{
         display: flex;
         flex-direction: column;
