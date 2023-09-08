@@ -1,0 +1,108 @@
+@import "../utilidades/variables";
+
+//bloque main
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    .contacto{
+        width: 100%;
+        background-color: #191718;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: inset -3px 3px 3px rgb(69, 67, 67);
+        color: $color-white;
+        h1{
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 6px;
+            text-shadow: 2px 2px 2px rgb(69, 67, 67);
+            border-bottom: solid 1px #fff;
+        }
+        .formulario{
+            .cajas{
+                max-height: 380px;
+                overflow: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 15px 0;
+                .form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    padding-bottom: 12px;
+                    margin-bottom: 8px;
+                    &:nth-child(2n){
+                        justify-content: space-between;
+                    }
+                    label{
+                        width: 95%;
+                        color: $color-white;
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin: 5px 0;
+                    }
+                    input , select{
+                        height: 35px;
+                        width: 95%;
+                        border-radius: 7px;
+                        outline: none;
+                        border: 2px solid rgb(69, 67, 67);
+                        padding: 0 10px;
+                    }
+                }
+            }
+            .form-genero{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                label{
+                    display: flex;
+                    margin: 5px 0;
+                    font-size: 18px;
+                    font-weight: 600;
+                    border-bottom: 1px solid $color-white;
+                }
+                input{
+                    margin: 0 1rem;
+                    cursor: pointer;
+                }
+            }
+            .form-terminos{
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+                padding: 5px 0;
+                label{
+                    padding-right: 8px;
+                }
+                input{
+                    cursor: pointer;
+                }
+            }
+            .form-boton{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                input{
+                    color: #d6d608;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 5px;
+                    border: none;
+                    border-radius: 3px;
+                    background: #b60404c7;
+                    &:hover{
+                        background-color: #069828cd;
+                        color: #d6d608;
+                    }
+                }
+            }
+        }
+    }
+}

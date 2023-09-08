@@ -1,0 +1,15 @@
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+// bloque main
+main{
+    .titulo-integrantes{
+        h1{
+            color: $color-white;
+            @extend %titulo-principal;
+            margin: 1rem 15%;
+            padding: 5px 0;
+        }
+    }
+    
+}

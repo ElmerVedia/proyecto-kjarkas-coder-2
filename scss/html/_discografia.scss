@@ -1,0 +1,26 @@
+@import "../utilidades/variables";
+
+//bloque main
+main{
+    .titulo-discografia{
+        h1{
+            color: $color-white;
+            @extend %titulo-principal;
+            margin: 1rem 5%;
+            padding-bottom: 5px;
+        }
+    }
+    .album{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            img{
+                height: 250px;
+                width: auto;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

@@ -1,485 +1,459 @@
-/* Cambiar confg de la raiz 
-html{
-    font-size: 62.5%;
-} */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Tipografia */
-body{
-    background: url("https://img.freepik.com/vector-premium/modelo-abstracto-diseno-fondo_622752-1580.jpg");
-    font-family: 'Lato', sans-serif;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+body {
+  background-image: url("../multimedia/fondo-4.jpg");
+  font-family: 'Lato', sans-serif; }
 
-/* estilos HEADER */
-.bg-transparencia{
-    position: fixed;
-    display: flex;
-    box-sizing: border-box;
-    background: rgba(0,0,0,0.6);
-    width: 100%;
-}
+main .contenedor-historia .historia-principal p, main .contenedor-historia .historia-secundario p {
+  font-size: 15px;
+  margin-bottom: 10px; }
 
-header img{
+main section .titulo h1, main .titulo-historia h1, main .titulo-integrantes h1, main .titulo-discografia h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 6px;
+  text-shadow: 2px 2px 2px #929292; }
+
+/* estilos home */
+header .bg-transparencia {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); }
+  header .bg-transparencia div img {
     height: 50px;
-    width: auto;
-}
-.menu ul li a{
-    padding: 12px 20px;
-    font-size: 14px;
+    width: auto; }
+  header .bg-transparencia div .icono-collapse {
+    background-color: rgba(110, 108, 108, 0.7); }
+  header .bg-transparencia div .menu ul {
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-}
-.menu ul li a:hover{
-    background: rgba(110, 108, 108, 0.7);
-    border-radius: 10px;
-}
+    gap: 1.5rem; }
+    header .bg-transparencia div .menu ul li a {
+      padding: 12px 20px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold; }
+      header .bg-transparencia div .menu ul li a:hover {
+        background: rgba(110, 108, 108, 0.7);
+        border-radius: 10px; }
+
 /* estilos MAIN */
-main img{
-    width: 100%;
-    height: 50vh;
-}
-/* estilos CUERPO */
-.titulo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.titulo h1{
+main .img-inicio img {
+  width: 100%;
+  height: 50vh; }
+
+main section .titulo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  main section .titulo h1 {
     color: #fff;
-    background: #000;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-    border-radius: 6px;
-    text-shadow: 2px 2px 2px rgb(192, 191, 191);
     margin: 1rem 5%;
-    padding-bottom: 5px;
-}
-.titulo p{
+    padding-bottom: 5px; }
+  main section .titulo p {
+    text-align: center;
     padding: 5px;
     color: #fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0 5px 30px 5px;
-    background: #000000c0;
-    border-radius: 10px;
-}
-.video{
-    display: flex;
-    padding: 0 1rem;
-    justify-content: center;
-}
-/* estilos ENLACES C/IMAGEN */
-.enlaces-interno{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-}
-.contenedor-imagen{
-    width: 100%;
-    display: flex;
-    max-width: 1020px;
-}
-.imagen{
-    width: 100%;
-    margin: 15px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #191718;
-    box-shadow: 0px 1px 10px rgba(84, 82, 82, 0.7);
-    transition: all 400ms ease;
-}
-.imagen:hover{
-    box-shadow: 5px 5px 20px rgb(52, 51, 51);
-    transform: translateY(-3);
-}
-.imagen img{
-    width: 100%;
-    height: 250px;
-}
-.imagen .enlace{
-    padding: 20px;
-    text-align: center;
-}
-.imagen .enlace a{
     font-weight: 400;
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid #363535;
-    border-radius: 6px;
-    transition: all 400ms ease;
-}
-.imagen .enlace a:hover{
-    font-weight: 600;
-    background-color: #7c7a7a;
-    color: #363535;
-}
+    font-size: 15px;
+    margin: 0 5px 30px 5px; }
 
-/* estilo SPOTIFY */
-.spotify-multimedia{
-    margin: 1rem 0;
-}
-.spotify{
-    display: flex;
-    justify-content: center;
-}
-.spotify-multimedia h2{
+main section .video {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center; }
+
+main .enlaces-interno {
+  display: none; }
+
+main .spotify-multimedia {
+  margin: 1rem 0; }
+  main .spotify-multimedia h2 {
     color: #fff;
-    background: #000;
-    text-decoration: underline;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin: 5px 10%;
-    border-radius: 10px;
-}
+    margin: 20px 10%; }
+  main .spotify-multimedia .spotify {
+    display: flex;
+    justify-content: center; }
+    main .spotify-multimedia .spotify .spotify-tres, main .spotify-multimedia .spotify .spotify-dos {
+      display: none; }
 
-.spotify-tres, .spotify-dos{
-    display: none;
-}
-
-/* estilos FOOTER */
-.footer-inicio{
-    background-color: #000;
-    height: 100%;
-}
-.footer-inicio img{
+footer .footer-inicio {
+  background-color: black;
+  height: 100%; }
+  footer .footer-inicio img {
     width: 100%;
-    height: 175px;
+    height: 150px;
     margin-top: 20px;
-    margin-bottom: 0;
-}
-.footer-inicio p{
+    margin-bottom: 0; }
+  footer .footer-inicio p {
     text-align: center;
     height: 20px;
     font-size: 10px;
     font-weight: bold;
     color: #fff;
     margin: 0 0;
-}
+    padding: 5px 0; }
 
-/* mq Pagina Inicio DESKTOP */
-@media screen and (min-width:1024px){
-    main img{
-        height: 100vh;
-    }
-    .titulo h1{
-        font-size: 35px;
-        font-weight: 800;
-        text-shadow: 2px 2px 2px rgb(76, 75, 75);
-        background: none;
-        color: #000;
-    }
-    .titulo p{
-        font-size: 20px;
-        background: #000;
-        margin: 0 25% 20px 25%;
-        color: #ffffff;
-        border-radius: 10px;
-    }
-    .video iframe{
-        height: 350px;
-        width: 560px;
-    }
-    .enlaces-interno{
-        display: flex;
-    }
-    .spotify-dos, .spotify-tres{
-        display: flex;
-    }
-    .spotify{
-        justify-content: space-around;
-    }
-    .spotify-multimedia{
-        margin: 2rem 0;
-    }
-    .spotify-multimedia h2{
-        font-size: 30px;
-        padding-bottom: 10px;
-        font-weight: 600;
-        background: none;
-        color: #000;
-    }
-    .footer-inicio img{
-        height: 250px;
-    }
-    .footer-inicio p{
-        font-size: 14px;
-    }
-}
-
-
-/* inicia pag Historia */
-.principal{
-    padding: 3px 6px;
-    margin: 50px 30px;
-    font-weight: bold;
-    background: #000000c0;
-}
-.principal h2{
-    text-align: center;
-    font-size: 30px;
-    text-decoration: underline;
-    margin: 20px 0;
-    font-size: 600;
+/* estilos Historia */
+main .titulo-historia {
+  text-align: center;
+  margin: 30px 0; }
+  main .titulo-historia h1 {
     color: #fff;
-    font-weight: 600;
-    text-shadow: 2px 2px 2px rgb(192, 191, 191);
-}
-.principal h3{
+    margin: 1rem 5%;
+    padding-bottom: 5px; }
+
+main .contenedor-historia {
+  padding: 3px 6px;
+  margin: 50px 5px; }
+  main .contenedor-historia .historia-principal {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; }
+    main .contenedor-historia .historia-principal h2 {
+      text-align: center;
+      font-size: 25px;
+      margin: 20px 0;
+      font-size: 600;
+      color: #cdc22ce6;
+      font-weight: 600;
+      text-shadow: 2px 2px 2px #e2ea58; }
+    main .contenedor-historia .historia-principal p {
+      color: #fff; }
+  main .contenedor-historia .historia-secundario h3 {
     font-size: 20;
     text-decoration: underline;
     margin: 10px 0;
     color: #fff;
-    font-weight: 500;
-}
-.principal p{
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #fff;
-}
+    font-weight: 500; }
+  main .contenedor-historia .historia-secundario p {
+    color: #fff; }
 
-/* mq Pag Historia DESKTOP */
-@media screen and (min-width:1024px){
-    .principal{
-        background:#000000c0;
-        color: #fff;
-    }
-}
+footer .footer-paginas p {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  font-size: 10px; }
 
+/* estilos integrantes */
+main .contenedor-historia .historia-principal p, main .contenedor-historia .historia-secundario p {
+  font-size: 15px;
+  margin-bottom: 10px; }
 
+main section .titulo h1, main .titulo-historia h1, main .titulo-integrantes h1, main .titulo-discografia h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 6px;
+  text-shadow: 2px 2px 2px #929292; }
 
-/* inicia pag Integrantes */
-.titulo-integrantes h1{
-    color: #fff;
-    background: #000;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-    border-radius: 6px;
-    text-shadow: 2px 2px 2px rgb(192, 191, 191);
-    margin: 1rem 15%;
-    padding: 5px 0;
-}
-.kjarkas-grupo{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 2rem 1rem;
-}
-.kjarkas-grupo div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+main .titulo-integrantes h1 {
+  color: #fff;
+  margin: 1rem 15%;
+  padding: 5px 0; }
 
-.kjarkas-uno{
-    display: none;
-}
-.kjarkas-dos{
-    display: none;
-}
+/* estilos discografia */
+main .titulo-discografia h1 {
+  color: #fff;
+  margin: 1rem 5%;
+  padding-bottom: 5px; }
 
-/* mq Pag Integrantes DESKTOP */
-@media screen and (min-width:1024px){
-    .titulo-integrantes h1{
-        font-size: 35px;
-        font-weight: 800;
-        text-shadow: 2px 2px 2px rgb(76, 75, 75);
-        background: none;
-        color: #000;
-    }
-    .kjarkas-uno{
-        display: flex;
-        flex-direction: column;
-        margin-right: 20px;
-    }
-    .kjarkas-dos{
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-    .kjarkas-grupo{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-}
-
-
-
-
-
-/* Inicia pag Discografia */
-.titulo-discografia{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-    border-radius: 6px;
-    text-shadow: 2px 2px 2px rgb(82, 81, 81);
-}
-.album{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.album img{
+main .album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .album div img {
     height: 250px;
     width: auto;
-    padding: 10px 15px;
-}
+    padding: 10px 15px; }
 
-.footer-paginas{
-    background-color: #000;
-}
-.footer-paginas p{
-    text-align: center;
-    margin: 0px 20px;
-    padding: 50px 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-}
-/* Inicio pag Contactos */
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main .contacto{
+/* estilos contactos */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px; }
+  .container .contacto {
     width: 100%;
-    max-width: 800px;
     background-color: #191718;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: inset -3px 3px 3px rgb(69, 67, 67);
-    color: #fff;
-}
-.contacto h1{
-    font-size: 26px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 6px;
-    text-shadow: 2px 2px 2px rgb(69, 67, 67);
-    border-bottom: solid 1px #fff;
-}
-.cajas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-.form:nth-child(2n){
-    justify-content: end;
-}
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding-bottom: 12px;
-}
-.form label{
-    width: 95%;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 5px 0;
-}
-.form input , select{
-    height: 35px;
-    width: 95%;
-    border-radius: 7px;
-    outline: none;
-    border: 2px solid rgb(69, 67, 67);
-    padding: 0 10px;
-}
-.form-genero label{
-    display: flex;
-    margin: 5px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 1px solid #fff;
-}
-.form-genero input{
-    margin: 0 1rem;
-}
-.form-terminos{
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    padding: 5px 0;
-}
-.form-terminos label{
-    padding-right: 8px;
-}
-
-.form-genero input, .form-terminos input{
-    cursor: pointer;
-}
-.form-boton{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.form-boton input{
-    color: #d6d608;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    background: #b60404c7;
-}
-.form-boton input:hover{
-    background-color: #069828cd;
-    color: #d6d608;
-}
-
-/* mq Contacto */
-@media screen and (max-width: 600px){
-    .container{
-        min-width: 280px;
-    }
-    .form{
-        margin-bottom: 8px;
-        width: 100%;
-    }
-    .form:nth-child(2n){
-        justify-content: space-between;
-    }
-    .form-genero{
+    box-shadow: inset -3px 3px 3px #454343;
+    color: #fff; }
+    .container .contacto h1 {
+      font-size: 26px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 6px;
+      text-shadow: 2px 2px 2px #454343;
+      border-bottom: solid 1px #fff; }
+    .container .contacto .formulario .cajas {
+      max-height: 380px;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 15px 0; }
+      .container .contacto .formulario .cajas .form {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
         width: 100%;
-    }
-    .cajas{
-        max-height: 380px;
-        overflow: auto;
-    }
-    .cajas::-webkit-scrollbar{
-        width: 0;
-    }
-}
+        padding-bottom: 12px;
+        margin-bottom: 8px; }
+        .container .contacto .formulario .cajas .form:nth-child(2n) {
+          justify-content: space-between; }
+        .container .contacto .formulario .cajas .form label {
+          width: 95%;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          margin: 5px 0; }
+        .container .contacto .formulario .cajas .form input, .container .contacto .formulario .cajas .form select {
+          height: 35px;
+          width: 95%;
+          border-radius: 7px;
+          outline: none;
+          border: 2px solid #454343;
+          padding: 0 10px; }
+    .container .contacto .formulario .form-genero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .container .contacto .formulario .form-genero label {
+        display: flex;
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px solid #fff; }
+      .container .contacto .formulario .form-genero input {
+        margin: 0 1rem;
+        cursor: pointer; }
+    .container .contacto .formulario .form-terminos {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      padding: 5px 0; }
+      .container .contacto .formulario .form-terminos label {
+        padding-right: 8px; }
+      .container .contacto .formulario .form-terminos input {
+        cursor: pointer; }
+    .container .contacto .formulario .form-boton {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px; }
+      .container .contacto .formulario .form-boton input {
+        color: #d6d608;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+        background: #b60404c7; }
+        .container .contacto .formulario .form-boton input:hover {
+          background-color: #069828cd;
+          color: #d6d608; }
 
+main .contenedor-historia .historia-principal p, main .contenedor-historia .historia-secundario p {
+  font-size: 15px;
+  margin-bottom: 10px; }
 
+main section .titulo h1, main .titulo-historia h1, main .titulo-integrantes h1, main .titulo-discografia h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 6px;
+  text-shadow: 2px 2px 2px #929292; }
 
+main .titulo-integrantes h1 {
+  color: #fff;
+  margin: 1rem 15%;
+  padding: 5px 0; }
 
+main .kjarkas-grupo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 1rem; }
+  main .kjarkas-grupo div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+main .kjarkas-uno {
+  display: none; }
+
+main .kjarkas-dos {
+  display: none; }
+
+/* mq desktop */
+@media screen and (min-width: 1024px) {
+  main .img-inicio img {
+    height: 100vh; }
+  main section .titulo h1 {
+    font-size: 40px;
+    font-weight: 900; }
+  main section .titulo p {
+    font-size: 20px;
+    margin: 0 25% 20px 25%; }
+  main section .video iframe {
+    height: 450px;
+    width: 660px; }
+  main .enlaces-interno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; }
+    main .enlaces-interno .contenedor-imagen {
+      width: 100%;
+      display: flex;
+      max-width: 1020px; }
+      main .enlaces-interno .contenedor-imagen .imagen {
+        width: 100%;
+        margin: 15px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #191718;
+        box-shadow: 0px 1px 10px rgba(84, 82, 82, 0.7);
+        transition: all 400ms ease; }
+        main .enlaces-interno .contenedor-imagen .imagen:hover {
+          box-shadow: 5px 5px 20px #343333;
+          transform: translateY(-3); }
+        main .enlaces-interno .contenedor-imagen .imagen figure img {
+          width: 100%;
+          height: 250px; }
+        main .enlaces-interno .contenedor-imagen .imagen .enlace {
+          padding: 20px;
+          text-align: center; }
+          main .enlaces-interno .contenedor-imagen .imagen .enlace a {
+            font-weight: 400;
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
+            border: 2px solid #363535;
+            border-radius: 6px;
+            transition: all 400ms ease; }
+            main .enlaces-interno .contenedor-imagen .imagen .enlace a:hover {
+              font-weight: 600;
+              background-color: #7c7a7a;
+              color: #363535; }
+  main .spotify-multimedia {
+    margin: 2rem 0; }
+    main .spotify-multimedia h2 {
+      font-size: 30px;
+      padding-bottom: 10px;
+      font-weight: 600; }
+    main .spotify-multimedia .spotify {
+      justify-content: space-around; }
+      main .spotify-multimedia .spotify .spotify-dos, main .spotify-multimedia .spotify .spotify-tres {
+        display: flex; }
+  footer .footer-inicio img {
+    height: 250px; }
+  footer .footer-inicio p {
+    font-size: 14px; } }
+
+/* mq desktop historia */
+@media screen and (min-width: 1024px) {
+  main .titulo-historia h1 {
+    font-size: 40px;
+    font-weight: 900; }
+  main .contenedor-historia {
+    margin-right: 15%;
+    margin-left: 15%; }
+    main .contenedor-historia .historia-principal h2 {
+      font-size: 35px;
+      font-weight: 800; }
+    main .contenedor-historia .historia-principal p {
+      font-size: 20px; }
+    main .contenedor-historia .historia-secundario {
+      margin: 0 10px; }
+      main .contenedor-historia .historia-secundario h3 {
+        font-size: 30px;
+        font-weight: 500; }
+      main .contenedor-historia .historia-secundario p {
+        font-size: 20px;
+        padding: 0 5px; } }
+
+footer .footer-paginas {
+  padding: 3rem 0; }
+  footer .footer-paginas p {
+    font-size: 14px;
+    font-weight: 500; }
+
+/* mq desktop integrantes */
+@media screen and (min-width: 1024px) {
+  main .titulo-integrantes h1 {
+    font-size: 35px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #4c4b4b;
+    color: #fff; }
+  main .kjarkas-grupo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 10px 15%; }
+    main .kjarkas-grupo .kjarkas-uno {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px; }
+      main .kjarkas-grupo .kjarkas-uno h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff; }
+      main .kjarkas-grupo .kjarkas-uno p {
+        font-size: 20px;
+        color: #fff; }
+    main .kjarkas-grupo .kjarkas-dos {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px; }
+      main .kjarkas-grupo .kjarkas-dos h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff; }
+      main .kjarkas-grupo .kjarkas-dos p {
+        font-size: 20px;
+        color: #fff; } }
+
+/* mq desktop discografia */
+@media screen and (min-width: 1024px) {
+  main .titulo-discografia h1 {
+    font-size: 35px;
+    font-weight: 800; }
+  main .album {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+/* mq desktop contactos */
+@media screen and (min-width: 1024px) {
+  .container .contacto {
+    min-width: 800px; }
+    .container .contacto .formulario .cajas {
+      overflow: hidden; }
+      .container .contacto .formulario .cajas .form {
+        margin-bottom: 0px;
+        width: 50%; }
+        .container .contacto .formulario .cajas .form:nth-child(2n) {
+          justify-content: end; }
+    .container .contacto .formulario .form-genero {
+      display: flex;
+      justify-content: center; }
+      .container .contacto .formulario .form-genero label {
+        margin-right: 4rem; }
+      .container .contacto .formulario .form-genero input {
+        margin: 0 1.5rem; } }

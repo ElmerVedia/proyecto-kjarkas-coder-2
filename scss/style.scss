@@ -1,0 +1,24 @@
+// base
+@import "base/resets";
+@import "base/bases";
+
+// utilidades
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+/* estilos home */
+@import "html/home";
+/* estilos Historia */
+@import "html/historia";
+/* estilos integrantes */
+@import "html/integrantes";
+/* estilos discografia */
+@import "html/discografia";
+/* estilos contactos */
+@import "html/contacto";
+@import "layout/grid";
+
+/* mq desktop */
+@import "utilidades/mq-desktop";
+
