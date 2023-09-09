@@ -1,5 +1,6 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../utilidades/extend"
 
 //bloque main
 
@@ -10,6 +11,7 @@ main{
         h1{
             color: $color-white;
             @extend %titulo-principal;
+            text-shadow: 2px 2px 2px rgb(146, 146, 146);
             margin: 1rem 5%;
             padding-bottom: 5px;
         }

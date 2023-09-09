@@ -1,0 +1,83 @@
+/* Cambiar confg de la raiz 
+html{
+    font-size: 62.5%;
+
+/* Tipografia */
+
+
+
+
+/* estilos ENLACES C/IMAGEN */
+
+
+/* estilo SPOTIFY */
+
+
+/* estilos FOOTER */
+
+
+/* mq Pagina Inicio DESKTOP */
+
+
+
+/* inicia pag Historia */
+
+
+/* mq Pag Historia DESKTOP */
+
+
+
+
+/* inicia pag Integrantes */
+
+
+
+
+
+
+/* mq Pag Integrantes DESKTOP */
+
+
+
+
+
+
+/* Inicia pag Discografia */
+
+/* Inicio pag Contactos */
+
+
+/* mq Contacto */
+@media screen and (min-width: 1024px){
+    .container{
+        min-width: 800px;
+    }
+    .form{
+        margin-bottom: 0px;
+        width: 50%;
+    }
+    .form:nth-child(2n){
+        justify-content: space-between;
+    }
+    .form-genero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .cajas{
+        max-height: 380px;
+        overflow: auto;
+    }
+}
+
+/* 
+
+
+
+
+*/
+
+
+
+
